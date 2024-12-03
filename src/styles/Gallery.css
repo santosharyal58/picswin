@@ -1,0 +1,83 @@
+.gallery-container{
+  text-align: center;
+}
+.gallery-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .photo-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .photo-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .vote-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    align-items: center;
+  }
+  
+  .likes {
+    display: flex;
+    align-items: center;
+  }
+  .img-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .img-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+/* Initially hide the button */
+.img-wrap .btn {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #e79654;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0; /* Hide button */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Show the button only on hover */
+.img-wrap:hover .btn {
+  opacity: 1; /* Show button on hover */
+}
+
+.img-wrap .btn:hover {
+  background-color: e79654;
+}
+  

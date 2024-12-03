@@ -1,0 +1,82 @@
+/* Styles for the header */
+.app-header {
+    padding: 15px 30px;
+    background-color: #f8f9fa; /* light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+  
+  /* Logo styling */
+  .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .logo {
+    display: block;
+    width: 120px; /* Adjust logo size */
+    height: auto;
+  }
+
+  .logo img{
+    object-fit: cover;
+  }
+  
+  /* Nav links styling */
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff; /* Bootstrap primary blue */
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .login-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 100;
+}
+
+.photo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-upload h2 {
+  margin-bottom: 15px;
+}
+
+.photo-upload input {
+  margin-bottom: 10px;
+}

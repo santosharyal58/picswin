@@ -1,0 +1,20 @@
+/* Styles for Hero section */
+  .hero-wrapper {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.upload-wrapper{
+  margin: 20px auto;
+}
+.actions{
+  margin: 20px auto;
+}
+.actions input{
+  width: 400px;;
+}

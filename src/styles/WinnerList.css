@@ -1,0 +1,34 @@
+.winners-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.winner-item{
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.img-wrap{
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.img-wrap img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+}

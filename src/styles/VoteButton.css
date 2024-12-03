@@ -1,0 +1,41 @@
+/* photo upload styles */
+
+  form {
+    margin: auto;
+  }
+  
+  ::file-selector-button {
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+    border: 1px solid var(--color);
+    color: var(--color);
+    transition: 1.3s;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 13.5rem;
+    height: 5rem;
+    border-radius: 2rem;
+  }
+  ::file-selector-button:hover, ::file-selector-button:focus {
+    border-color: var(--hover);
+    color: white;
+  }
+  
+  ::file-selector-button:hover,
+  ::file-selector-button:focus {
+    box-shadow: inset 15rem 0 0 0 var(--hover);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ::file-selector-button {
+    --color: #e75480;
+    --hover: #e79654;
+  }
+  
+  
